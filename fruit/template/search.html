@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <meta charset="UTF-8">
+  <title>SEARCH WINDOW</title>
+</head>
+<body>
+<div class="form-style-5">
+<form action="srch1" method="post" enctype="multipart/form-data" >{% csrf_token %}
+<fieldset>
+  <legend style="text-align:center" ><b>MERCHANT SECTION</b></legend>
+<input type="number" name="n1" placeholder="ROLL NO ">
+  </fieldset>
+<input style="border-radius:20px" type="submit" class="button button1" placeholder="Apply" ><br>
+</form>
+</body>
+</html>

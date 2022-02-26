@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <title>Add Item</title>
+</head>
+<body>
+<div class="form-style-5">
+<form action="submit" method="post" enctype="multipart/form-data">{% csrf_token %}
+<fieldset>
+  <legend style="text-align:center" ><b>MERCHANT SECTION</b></legend>
+<input type="number" name="n1" placeholder="ROLL NO ">
+<input type="text" name="n2" placeholder="student Name">
+<input type="number" name="n3" placeholder="age">
+  <input type="number" name="n4" placeholder="mark">
+<input  type="file" name="n5">
+</fieldset>
+<input type="submit" class="button button1" placeholder="Apply" ><br>
+  <button type="submit" class="btn btn-outline-success" formaction="home" style="margin-left:10px">Home</button>
+</form>
+</div>
+</body>
+</html>

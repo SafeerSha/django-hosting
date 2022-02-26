@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>home</title>
+
+</head>
+<body>
+
+ <form method="post" action="add" enctype="multipart/form-data">{% csrf_token %}
+<div class="jumbotron jumbotron-fluid" style="height:1000px">
+  <div class="container">
+      <img src="{% static 'images/uni.png' %}" style="width:90px;height:90px;">
+    <h1>CALICUT UNIVERSITY</h1> <br>
+      <p><b>RESULTS</b></p>
+       <button type="submit" class="btn btn-outline-warning" >Enter Result(Teachers)</button>
+       <button type="submit" class="btn btn-outline-dark"  formaction="all">All Students</button>
+      <button type="submit" class="btn btn-outline-success" formaction="pass" style="margin-left:10px">Passed Students</button>
+       <button type="submit" class="btn btn-outline-success" formaction="srch" style="margin-left:10px">Search Student</button>
+
+  </div>
+
+</form>
+
+
+</body>
+</html>

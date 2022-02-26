@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shamon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div" style="height:300px;width:500px;background:skyblue;display:none">
+    <p>Liverpool is a city and metropolitan borough in Merseyside, England. With a population of 498,042 in 2019, it is the tenth largest English district by population, and its metropolitan area is the fifth largest in the United Kingdom with a population of 2.24 million. Situated on the eastern side of the Mersey Estuary, Liverpool historically lay .</p>
+    <img src="sha.jpg" style= "height:100px;width:200px">
+</div>
+<button id="q">hide</button>
+<button id="r">show</button>
+<script>
+    $(document).ready(function(){
+    $("#q").click(function(){
+    $("#div").hide(3000);});
+    $("#r").click(function(){
+    $("#div").fadeIn();});});
+</script>
+</body>
+</html>
